@@ -7,8 +7,7 @@
   </head>
 
   <body>
-    <!-- <header class="dynamic-navbar" id="navbar"> -->
-    <header style="position:fixed;">
+    <header class="dynamic-navbar" id="navbar">
       <nav class="chocomint-nav-container">
         <abbr title="Home NDominus"><a href="https://ndominus.github.io/">
             <img class="icon-neon" src="https://raw.githack.com/DiegoBarMor/chocomint-css/main/icons/home.png" alt="Icon">
@@ -22,7 +21,7 @@
             onclick="toggle_theme()">
         </abbr>
         <div class="chocomint-nav-buttons">
-          <a class="button" href="#">Top</a>
+          <a class="button" href="#instructions">Instructions</a>
           <select id="page-select">
             <optgroup label="Zone">
               <option value="little_havana">Little Havana</option>
@@ -35,22 +34,28 @@
       </nav>
     </header>
 
-    <!-- <main id="main"> -->
-    <main id="main" style="margin-top:100px;">
+    <main id="main">
       <h1>Scarface TWIY Map</h1>
         <small>Utility for keeping progress in the videogame <a href="https://en.wikipedia.org/wiki/Scarface:_The_World_Is_Yours">Scarface: The World Is Yours</a></small><br>
         <small>By <a href="https://github.com/ndominus/">NDominus</a></small>
 
-      <p>
-        Password: <input type="text" id="password" placeholder="Password...">
-        <button onclick="setNewPassword()">Submit</button>
-      </p>
+      <h2 id="instructions">Instructions</h2>
+        <p>
+          This is a utility for keeping track of which gangs have been defeated in the game. You can mark them as defeated by clicking on the skull icons in the map. You can switch to any of the 4 zones of the game (<b>Little Havana</b>, <b>Downtown</b>, <b>South Beach</b> and <b>North Beach</b>) by selecting them in the top navigation bar. <br><br>
 
-      <div id="map-container"></div>
+          You can save your progress of each zone by copying the password generated in the input field above the interactive map. You can also load your progress by pasting the password in the input field and clicking the "Submit Password" button. Note that a different password is used for each zone of the game. <br><br>
+        </p>
 
-      <p>
-        Screenshots obtained from <a href="https://www.sierrachest.com/index.php?a=games&id=128&fld=maps">The Sierra Chest</a>.
-      </p>
+      <h2>Map</h2>
+        <p>
+          <input type="text" id="password" placeholder="Password...">
+          <button onclick="setNewPassword()">Submit Password</button>
+
+        </p>
+        <div id="map-container"></div>
+        <p>
+          Screenshots obtained from <a href="https://www.sierrachest.com/index.php?a=games&id=128&fld=maps">The Sierra Chest</a>.
+        </p>
 
     </main>
 
