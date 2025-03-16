@@ -25,7 +25,6 @@
           <a class="button" href="#">Top</a>
           <select id="page-select">
             <optgroup label="Zone">
-              <option value="">---</option>
               <option value="little_havana">Little Havana</option>
               <option value="downtown">Downtown</option>
               <option value="south_beach">South Beach</option>
@@ -39,43 +38,19 @@
     <!-- <main id="main"> -->
     <main id="main" style="margin-top:100px;">
       <h1>Scarface TWIY Map</h1>
-        <small>Page description</small><br>
+        <small>Utility for keeping progress in the videogame <a href="https://en.wikipedia.org/wiki/Scarface:_The_World_Is_Yours">Scarface: The World Is Yours</a></small><br>
         <small>By <a href="https://github.com/ndominus/">NDominus</a></small>
+
+      <p>
+        Password: <input type="text" id="password" placeholder="Password...">
+        <button onclick="setNewPassword()">Submit</button>
+      </p>
+
+      <div id="map-container"></div>
 
       <p>
         Screenshots obtained from <a href="https://www.sierrachest.com/index.php?a=games&id=128&fld=maps">The Sierra Chest</a>.
       </p>
-
-      <p>
-        <div class="image-container">
-          <img src="imgs/downtown.jpg" alt="">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 57.2917%; left: 20.0000%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 63.3333%; left: 23.1250%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 73.1250%; left: 24.0625%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 53.9583%; left: 26.5625%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 60.0000%; left: 26.7188%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 51.0417%; left: 30.3125%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 77.0833%; left: 30.6250%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 70.0000%; left: 31.0937%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 67.2917%; left: 34.0625%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 58.5417%; left: 35.0000%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 50.6250%; left: 36.2500%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 73.9583%; left: 38.1250%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 46.4583%; left: 38.5938%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 46.2500%; left: 43.1250%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 52.5000%; left: 44.6875%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 53.7500%; left: 48.7500%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 45.4167%; left: 51.7188%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 48.1250%; left: 57.3438%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 36.6667%; left: 62.1875%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 42.2917%; left: 66.0938%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 40.4167%; left: 68.5938%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 36.6667%; left: 71.7188%;">
-          <img class="icon-skull" src="imgs/skull_on.png" alt="Icon" style="top: 21.0417%; left: 75.3125%;">
-        </div>
-
-      </p>
-
 
     </main>
 
@@ -84,6 +59,6 @@
   </body>
 
   <script src="https://raw.githack.com/DiegoBarMor/chocomint-css/main/chocomint.min.js"></script>
+  <script src="script.js"></script>
 
 </html>
-<!-- ss = arr.reduce((sum,x,i) => sum + x*2**(x*i), 0); -->
