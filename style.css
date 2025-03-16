@@ -1,0 +1,24 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.icon-skull {
+  position: absolute;
+  width: 2.1875%; /* 14px */
+  height: 3.125%; /* 15px */
+  transition: filter 0.3s;
+}
+
+.icon-skull:hover {
+  filter: brightness(0) saturate(100%)
+    invert(11%) sepia(100%) saturate(5875%) hue-rotate(359deg) brightness(110%) contrast(108%)
+    drop-shadow(0 0 4px #fff);
+  /* calculated with https://codepen.io/sosuke/pen/Pjoqqp for #4B0708; */
+}
